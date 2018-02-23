@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-		<input class="input" type="search" placeholder="busqueda" v-model="message"></input>
+		<h1>Hello Vue Component</h1>
+		<input class="input" type="search" placeholder="busqueda" v-model="message"/>
 		<Input v-bind:msg="message"/>
 		<!-- <pre>{{ message }}</pre> -->
   </div>
@@ -23,5 +24,24 @@ export default {
 }
 </script>
 
-<style src="./css/style.css"></style>
-<!-- <style src="./css/fonts.css"></style> AL PONERLO DA ERROR-->
+<style>
+@import url('./fonts/stylesheet.css'); 
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Avenir Next LT Pro', serif;
+}
+
+#app {
+	font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+.input {
+	border: 1px solid black;
+}
+</style>
