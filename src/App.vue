@@ -3,7 +3,7 @@
     <img src="./assets/logo.png">
 		<input class="input" type="search" placeholder="busqueda" v-model="message"></input>
 		<Input v-bind:msg="message"/>
-		<pre>{{ message }}</pre>
+		<!-- <pre>{{ message }}</pre> -->
   </div>
 </template>
 
@@ -23,16 +23,5 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-.input {
-	border: 1px solid black;
-}
-</style>
+<style src="./css/style.css"></style>
+<!-- <style src="./css/fonts.css"></style> AL PONERLO DA ERROR-->
